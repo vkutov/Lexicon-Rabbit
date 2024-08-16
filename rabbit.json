@@ -1,0 +1,7 @@
+{"rabbit":[  
+    {"model":"1", "year":1976, "hp":62,"price": 5000, "miles":30000, "image": "img/vwrabbit1.png"},
+    {"model":"2", "year":1991, "hp":72,"price": 10000, "miles":25000, "image": "img/vwrabbit2.jpg"},
+    {"model":"5", "year":2005, "hp":102,"price": 15000, "miles":20000, "image": "img/vwrabbit5.jpg"},
+    {"model":"4", "year":2000, "hp":102,"price": 13000, "miles":22000, "image": "img/vwrabbit4.jpg"}  
+
+]}
