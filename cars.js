@@ -1,5 +1,6 @@
 // Fetch the planet data from json file
 const url = "rabbit.json";
+
 function removeCar(id, arr) {
   arr.splice(id, 1); // 2nd parameter means remove one item only
   localStorage.setItem("vw", JSON.stringify(arr));
@@ -64,6 +65,8 @@ function displayCars(golfs) {
     bunny.appendChild(del);
     // check if we have set the variable
     let carSection = document.querySelector(".cars");
+    console.log(carSection);
+
     carSection.appendChild(bunny);
   });
 }
