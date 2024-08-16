@@ -2,9 +2,11 @@
 const url = "rabbit.json";
 // remove a car by id
 function removeCar(id, arr) {
+  // create a new array without the element with id golf.id
   let filteredArray = arr.filter(function (e) {
     return e.id !== id;
   });
+  //   put the new array in the storage
   localStorage.setItem("vw", JSON.stringify(filteredArray));
   location.reload();
 }
