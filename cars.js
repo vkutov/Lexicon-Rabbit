@@ -17,6 +17,9 @@ async function fetchText(url) {
     console.error(e);
   }
 }
+// function deleteItem(num) {
+//   alert(num);
+// }
 // golfs is an arry of different cars
 function displayCars(golfs) {
   // loop the array
@@ -29,8 +32,26 @@ function displayCars(golfs) {
     // fix the image
     let img = document.createElement("img");
     img.src = golf.image;
+    // add class
     img.classList.add("pic");
     bunny.appendChild(img);
+    let actions = document.createElement("p");
+    // make delete button
+    let del = document.createElement("button");
+    del.classList.add("btn");
+    // remove from localStorage
+    del.addEventListener("click", function () {
+      localStorage.removeItem(golf);
+      let delResponse = fetch(`rabbit.json/rabbit/${golf.id}`, {
+        method: "DELETE",
+      });
+      //   console.log(golf);
+    });
+
+    // add an action
+    del.textContent = "delete";
+    bunny.appendChild(actions);
+    bunny.appendChild(del);
     const carSection = document.querySelector(".cars");
     carSection.appendChild(bunny);
 
