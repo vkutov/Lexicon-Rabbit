@@ -2,9 +2,10 @@
 const url = "rabbit.json";
 // remove a car by id
 function removeCar(id, arr) {
-  let index = arr.indexOf(id);
-  arr.splice(index, 1); // 2nd parameter means remove one item only
-  localStorage.setItem("vw", JSON.stringify(arr));
+  let filteredArray = arr.filter(function (e) {
+    return e.id !== id;
+  });
+  localStorage.setItem("vw", JSON.stringify(filteredArray));
   location.reload();
 }
 async function fetchText(url) {
