@@ -20,6 +20,10 @@ function updateCar(id, arr) {
   document.location = "updateCars.html";
 }
 
+function createCar() {
+  document.location = "createCar.html";
+}
+
 async function fetchText(url) {
   //check if it is a load or reload
   if (localStorage.getItem("vw") === null) {
@@ -55,11 +59,14 @@ function displayCars(golfs) {
     //add style
     bunny.textContent = `Model : ${golf.model}; Year : ${golf.year}; Price ${golf.price}; Rabbit Power : ${golf.hp}`;
     // fix the image
-    let img = document.createElement("img");
-    img.src = golf.image;
-    // add class
-    img.classList.add("pic");
-    bunny.appendChild(img);
+    if (golf.image != undefined) {
+      console.log(golf.image);
+      let img = document.createElement("img");
+      img.src = golf.image;
+      // add class
+      img.classList.add("pic");
+      bunny.appendChild(img);
+    }
     let actions = document.createElement("section");
     // make delete button
     let del = document.createElement("button");

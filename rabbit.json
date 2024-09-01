@@ -2,5 +2,5 @@
     {"id":0,"model":"1", "year":1976, "hp":62,"price": 5000, "miles":30000, "joke":"What is the most romantic thing that a bulgarian(from he city of Pernik) can say? Would you want to wash my Golf to the rest of your life?",  "image": "img/vwrabbit1.png"},
     {"id":1,"model":"2", "year":1991, "hp":72,"price": 10000, "miles":25000, "joke":"Where is the biggest golf resort? It is the bulgarian city of Pernik. Therare are a lot of holes on the roads, and everyone is a player",  "image": "img/vwrabbit2.jpg"},
     {"id":2,"model":"5", "year":2005, "hp":102,"price": 15000, "miles":20000, "joke":"Next monday in Pernik will be the second round of the race with Golfs. It will honor all the offers of the first round...", "image": "img/vwrabbit5.jpg"},
-    {"id":3,"model":"4", "year":2000, "hp":102,"price": 13000, "miles":22000, "joke":"Dear, I would like to be berrid with my Golf when I die. I have already gone in every hole in Pernik with it...",  "image": "img/vwrabbit4.jpg"}  
+    {"id":3,"model":"4", "year":2000, "hp":82,"price": 13000, "miles":22000, "joke":"Dear, I would like to be berrid with my Golf when I die. I have already gone in every hole in Pernik with it...",  "image": "img/vwrabbit4.jpg"}  
 ]}
